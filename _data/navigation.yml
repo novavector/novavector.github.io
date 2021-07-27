@@ -9,26 +9,49 @@
   #   url: /pages/index-3
 # - text: Blog
 #   url: /pages/blog
+- text: Products
+  # url: /pages/services
+  submenu:
+    - text: Nova Vector Platform
+      url: /products/platform
+    - text: Nova Edge Computing
+      url: /products/edge
 - text: Services
-  url: /pages/services
+  # url: /pages/services
+  submenu:
+    - text: Support
+      url: /services/support
+    - text: Training
+      url: /services/training
+    - text: Professional Services
+      url: /services/professional_services
+- text: Use Cases
+  # url: /pages/services
+  submenu:
+    - text: Industry 4.0
+      url: /cases/industry
+    - text: Smart Agriculture
+      url: /cases/agriculture
+    - text: Service Providers
+      url: /cases/providers
 # - text: About
 #   url: /pages/about
 # - text: Pages
 #   url: /
-  # submenu:
-  # - text: Services
-  #   url: /pages/services
-  # - text: Service Details
-  #   url: /pages/services-details
-  # - text: Portfolio
-  #   url: /pages/portfolio   
-  # - text: Portfolio Details
-  #   url: /pages/portfolio-details 
-  # - text: About Us
-  #   url: /pages/about
-  # - text: Contact
-  #   url: /pages/contact
-  # - text: 404
-  #   url: /pages/404
+# submenu:
+# - text: Services
+#   url: /pages/services
+# - text: Service Details
+#   url: /pages/services-details
+# - text: Portfolio
+#   url: /pages/portfolio
+# - text: Portfolio Details
+#   url: /pages/portfolio-details
+# - text: About Us
+#   url: /pages/about
+# - text: Contact
+#   url: /pages/contact
+# - text: 404
+#   url: /pages/404
 - text: Contact
   url: /pages/contact
