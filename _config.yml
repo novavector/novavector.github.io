@@ -26,6 +26,7 @@ plugins:
   - jekyll-archives
 
 cover_image: "/assets/img/bg/page-title.jpg"
+post_image: "/assets/img/bg/nova-vector-cover.jpg"
 
 #collections
 collections:
