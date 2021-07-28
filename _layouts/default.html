@@ -64,6 +64,9 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/responsive.css">
     <title>{{site.title}}</title>
     {% feed_meta %}
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
 </head>
 
 <body>
