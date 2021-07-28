@@ -14,6 +14,7 @@ logo: "/assets/img/logo/logo.png"
 logo_2: "/assets/img/logo/logo_2.png"
 mailchimp_list: ""
 mailchimp_input_name: ""
+google_analytics: UA-148449692-1
 
 permalink: "/:title"
 
