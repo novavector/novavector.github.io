@@ -4,47 +4,78 @@ title: Contact
 ---
 
 <!-- contact-area -->
-<section class="contact-area pb-70 pt-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4 col-md-4 text-center text-md-left mb-30">
-                <div class="contact-person">
-                    <h4>Nova Vector</h4>
-                    <p>Working hours:</p>
-                    <a href="#" class=""><i class="far fa-calendar-alt"></i>Mon - Fri 8:00 AM - 4:00 PM</a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-4 text-center text-md-left mb-30">
-                <div class="contact-person">
-                    <h4>Enquiry Phone</h4>
-                    <p>If you want to know more about Nova Vector services, feel free to contact us:</p>
-                    <a href="#" class=""><i class="fas fa-phone"></i>(+381) 64 1151 256</a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-4 text-center text-md-left mb-30">
-                <div class="contact-person">
-                    <h4>Drop an Email</h4>
-                    <p>For all information and any questions you might have please send us an Email to:</p>
-                    <a href="#" class=""><i class="far fa-envelope"></i>info@novavector.com</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<section class="contact-area">
 <!-- contact-maps -->
 <div class="maps-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="maps">
-                    <a href="#"><img src="/assets/img/novavector-contact-map.png" class="img-fluid" alt="Nova Vector - Address"></a>
+    <div class="row" style="background-image: url({{site.baseurl}}/assets/img/novavector-contact-map.png);">
+        <div class="container">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+                <div class="orange-box">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                            <div>
+                                <img src="{{site.baseurl}}/assets/img/phone.png">
+                            </div>
+                            <p>+(381) 64 1151 256</p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                            <img src="{{site.baseurl}}/assets/img/securedletter.png">
+                            <p>info@novavector.com</p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                            <img src="{{site.baseurl}}/assets/img/placemarker.png">
+                            <p>Generala Ljubomira<br> Milica 10</p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                            <img src="{{site.baseurl}}/assets/img/clock.png">
+                            <p>Mon - Fri
+                                8:00 am - 16:00 pm</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="mobile-maps-area">
+    <div class="row" style="background: url({{site.baseurl}}/assets/img/novavector-contact-map.png) no-repeat 80% 80%">
+        <div class="col-6">
+            <div class="orange-box">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="{{site.baseurl}}/assets/img/phone.png">
+                        <p>+(381) 64 1151 256</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="{{site.baseurl}}/assets/img/securedletter.png">
+                        <p>info@novavector.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-6"></div>
+        <div class="col-6">
+                <div class="orange-box-2">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="{{site.baseurl}}/assets/img/placemarker.png">
+                            <p>Generala Ljubomira<br> Milica 10</p>
+                        </div>
+                        <div class="col-12 text-center">
+                            <img src="{{site.baseurl}}/assets/img/clock.png">
+                            <p>Mon - Fri
+                                8:00 am - 16:00 pm</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+</section>
 <!-- contact-form -->
-<section class="contact-form pb-100 pt-100">
+<section class="contact-form">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -58,20 +89,20 @@ title: Contact
             <div class="col-md-8 offset-md-2">
                 <form id="contact-form" action="mail.php" class="contact-form" method="POST">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 mb-20">
+                        <div class="col-xl-6 col-lg-6">
                             <input name="name" type="text" placeholder="Name">
                         </div>
-                        <div class="col-xl-6 col-lg-6 mb-20">
+                        <div class="col-xl-6 col-lg-6">
                             <input name="email" type="email" placeholder="Email">
                         </div>
-                        <div class="col-xl-12 mb-20">
+                        <div class="col-xl-12">
                             <input name="subject" type="text" placeholder="Subject">
                         </div>
-                        <div class="col-xl-12 mb-20">
+                        <div class="col-xl-12">
                             <textarea name="message" id="text-message" cols="30" rows="10" placeholder="Message*"></textarea>
                         </div>
                         <div class="col-xl-12 text-center">
-                            <button class="btn" type="submit">Send Mail</button>
+                            <button class="btn" type="submit">Send mail</button>
                         </div>
                     </div>
                 </form>

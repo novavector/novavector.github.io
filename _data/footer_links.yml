@@ -1,0 +1,10 @@
+- text: Home
+  url: /
+#- text: Terms
+#  url: /
+#- text: Privacy
+#  url: /
+#- text: Policy
+#  url: /
+- text: Contact
+  url: /pages/contact

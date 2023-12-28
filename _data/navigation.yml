@@ -10,48 +10,56 @@
 # - text: Blog
 #   url: /pages/blog
 - text: Products
-  # url: /pages/services
+  url: /pages/products
   submenu:
-    - text: Nova Vector Platform
-      url: /products/platform
-    - text: Nova Edge Computing
-      url: /products/edge
+  - text: Nova Vector Platform
+    url: /pages/nova-vector-platform
+  - text: Nova Edge Computing
+    url: /pages/nova-edge-computing
 - text: Services
-  # url: /pages/services
+  url: /pages/services
   submenu:
-    - text: Support
-      url: /services/support
-    - text: Training
-      url: /services/training
-    - text: Professional Services
-      url: /services/professional_services
-- text: Use Cases
-  # url: /pages/services
-  submenu:
-    - text: Industry 4.0
-      url: /cases/industry
-    - text: Smart Agriculture
-      url: /cases/agriculture
-    - text: Service Providers
-      url: /cases/providers
+  - text: Support
+    url: /pages/support
+  - text: Services
+    url: /pages/professional-services
+  - text: Training
+    url: /pages/training
+  # - text: PaaS
+  #   url: /pages/paas
 # - text: About
 #   url: /pages/about
+- text: Solutions
+  url: /pages/solutions
+  submenu:
+  - text: Smart Industry
+    url: /pages/smart-industry
+  - text: Education
+    url: /pages/education
+  - text: Smart Building
+    url: /pages/smart-building
+  - text: Smart Agriculture
+    url: /pages/smart-agriculture
+#  - text: Smart Providers
+#    url: /pages/smart-providers
+#  - text: Smart Retail
+#    url: /pages/smart-retail
 # - text: Pages
 #   url: /
-# submenu:
-# - text: Services
-#   url: /pages/services
-# - text: Service Details
-#   url: /pages/services-details
-# - text: Portfolio
-#   url: /pages/portfolio
-# - text: Portfolio Details
-#   url: /pages/portfolio-details
-# - text: About Us
-#   url: /pages/about
-# - text: Contact
-#   url: /pages/contact
-# - text: 404
-#   url: /pages/404
+  # submenu:
+  # - text: Services
+  #   url: /pages/services
+  # - text: Service Details
+  #   url: /pages/services-details
+  # - text: Portfolio
+  #   url: /pages/portfolio
+  # - text: Portfolio Details
+  #   url: /pages/portfolio-details
+  # - text: About Us
+  #   url: /pages/about
+  # - text: Contact
+  #   url: /pages/contact
+  # - text: 404
+  #   url: /pages/404
 - text: Contact
   url: /pages/contact
