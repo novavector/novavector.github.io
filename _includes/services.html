@@ -1,36 +1,54 @@
-<section class="service-area grey-bg pb-70 pt-100">
+<section class="service-area darker-grey-bg">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12 text-center mb-40">
+            <div class="col-xl-12 text-center">
                 <div class="section-title service-title">
-                    <h2>Our Services</h2>
-                    <p>
-                        Nova Vector is cutting EDGE technology provider for the business solutions of the future. We
-                        integrate your existing systems with advanced technologies and help you move your business
-                        forward.
-                        Nova Vector offers ready to use solutions in domains of:
-                        Industrial IoT,
-                        Advanced Analytics and
-                        Blockchain.
-                    </p>
+                    <h3>Our Services</h3>
+                </div>
+                <div class="services-paragraph">
+                    <p>Nova Vector is technology provider for the  business solutions of the future. We
+                      integrate your existing systems with advanced technologies and help you move your business
+                       forward. We offer ready to use solutions in domains of: IoT, Blockchain, Advanced Analytics.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            {% for service in site.services %}
-            <div class="col-lg-4 col-md-6 text-center mb-30">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
                 <div class="features-wrap">
-                    {% if service.icon %}
                     <div class="features-icon">
-                        <img src="{{service.icon}}" alt="{{service.title}}">
+                        <img src="{{site.baseurl}}/assets/img/icons/support.png" id="support-icon" alt="Support">
                     </div>
-                    {% endif %}
-                    <h4>{{service.title}}</h4>
-                    <p>{{service.description}}</p>
-                    <a href="{{service.url}}">Read More</a>
+                    <div class="section-title service-title">
+                        <h4>Support</h4>
+                    </div>
+                        <p>Nova Vector provides great support services, ensuring prompt assistance and reliable solutions.</p>
+                        <a class="btn" href="{{site.baseurl}}/pages/support">More details</a>
                 </div>
             </div>
-            {% endfor %}
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                <div class="features-wrap">
+                    <div class="features-icon">
+                        <img src="{{site.baseurl}}/assets/img/icons/services.png" id="services-icon" alt="Service">
+                    </div>
+                    <div class="section-title service-title">
+                        <h4>Service</h4>
+                    </div>
+                        <p>Nova Vector delivers tailored services, ensuring seamless integration and proactive maintenance.</p>
+                        <a class="btn" href="{{site.baseurl}}/pages/professional-services">More details</a>
+                </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                <div class="features-wrap">
+                    <div class="features-icon">
+                        <img src="{{site.baseurl}}/assets/img/icons/training.png" id="training-icon" alt="Training">
+                    </div>
+                    <div class="section-title service-title">
+                        <h4>Training</h4>
+                    </div>
+                        <p>Nova Vector offers training programs, equipping your team with skills to leverage tech effectively.</p>
+                        <a class="btn" href="{{site.baseurl}}/pages/training">More details</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

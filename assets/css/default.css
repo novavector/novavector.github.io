@@ -647,6 +647,10 @@
 
 /* Background Color */
 
+.darker-grey-bg {
+	background: #F7F6F6;
+}
+
 .grey-bg {
 	background: #F8F9FA;
 }

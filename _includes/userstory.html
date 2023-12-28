@@ -1,0 +1,104 @@
+
+<!-- user-story -->
+<!--Bootstrap CSS-->
+
+<!--Fontawesome-->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<section class="user-story">
+    <script>
+        function setNavLinksHeight() {
+          const navLinks = document.querySelectorAll('.nav-link');
+          let maxHeight = 0;
+
+          navLinks.forEach(link => {
+            const linkHeight = link.getBoundingClientRect().height;
+            maxHeight = Math.max(maxHeight, linkHeight);
+          });
+
+          navLinks.forEach(link => {
+            link.style.height = `${maxHeight}px`;
+          });
+        }
+
+        window.addEventListener('DOMContentLoaded', setNavLinksHeight);
+        window.addEventListener('resize', setNavLinksHeight);
+    </script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>User Story</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+            <p class="black-text">Here are some of the user stories of the Nova Vector Industry 4.0 Platform.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container for the image gallery -->
+    <div class="container-fluid">
+        <div class="container-box">
+            <!-- Tabs navs -->
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-industry-tab" data-bs-toggle="tab" data-bs-target="#nav-industry" type="button" role="tab" aria-controls="nav-industry" aria-selected="true">
+                                                Smart <br>Industry
+                                            </button>
+                    <button class="nav-link" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">
+                                                Education
+                                            </button>
+                    <button class="nav-link" id="nav-building-tab" data-bs-toggle="tab" data-bs-target="#nav-building" type="button" role="tab" aria-controls="nav-building" aria-selected="false">
+                                                Smart <br>Building
+                                            </button>
+                    <button class="nav-link" id="nav-agriculture-tab" data-bs-toggle="tab" data-bs-target="#nav-agriculture" type="button" role="tab" aria-controls="nav-agriculture" aria-selected="false">
+                                                Smart <br>Agriculture
+                                            </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-agriculture" role="tabpanel" aria-labelledby="nav-agriculture-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/agriculture-resized.png)">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                    <h4>Smart <br> agriculture</h4>
+                                    <p>Nova Vector offers seamless integration of sensors, analytics, and automation for optimized agriculture operations. Our user-friendly solutions empower farming companies to achieve productivity and success.</p>
+                                    <a href="/pages/smart-agriculture.html" id="bigbtn" class="btn">More details</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="tab-pane fade" id="nav-industry" role="tabpanel" aria-labelledby="nav-industry-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/industry-resized.png)">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                    <h4>Smart <br> industry</h4>
+                                    <p>In the Industry 4.0 era, Nova Vector serves as your valuable partner, connecting existing systems with advanced technologies. Real-time data insights and enhanced operational efficiency are enabled through our IoT solutions.</p>
+                                    <a href="/pages/smart-industry.html" id="bigbtn" class="btn">More details</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-building" role="tabpanel" aria-labelledby="nav-building-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/building-resized.png)">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                    <h4>Smart <br> building</h4>
+                                    <p>Transforming buildings into intelligent spaces, Nova Vector integrates smart sensors and energy management systems. The result: enhanced comfort, reduced energy usage, and predictive maintenance for sustainable and cost-effective operations.</p>
+                                    <a href="/pages/smart-building.html" id="bigbtn" class="btn">More details</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/education-resized.png)">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                    <h4>Education</h4>
+                                    <p>Nova Vector empowers education through integrated IoT solutions that facilitate interactive learning experiences and seamless campus management. Data-driven insights contribute to personalized education and a brighter future.</p>
+                                    <a href="/pages/education.html" id="bigbtn" class="btn">More details</a>
+                            </div>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</section>
