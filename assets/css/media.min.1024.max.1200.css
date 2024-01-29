@@ -1114,8 +1114,60 @@
 		align-items: center;
 	}
 
-	.mobile-platform, .mobile-agriculture, .mobile-industry {
+	.mobile-platform, .mobile-agriculture, .mobile-industry, .mobile-city {
 		display: none;
 	}
+	/* Smart City */
+	.service-detail .title-city {
+		position: relative;
+		text-align: left;
+		margin: 5% 5% auto 5%;
+	}
 
+	.service-detail .title-city::before {
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: -15px;
+		margin: 0%;
+	}
+
+	.service-detail .title-1-city {
+		position: relative;
+		text-align: left;
+		margin: 5% 5% auto 5%;
+	}
+	#left-paragraph-in-row .title-1-city {
+		margin: 5% 5% auto 10%;
+	}
+
+	.service-detail .title-1-city::before {
+		position: absolute;
+		width: 50%;
+		height: 2px;
+		bottom: -15px;
+		margin: 0%;
+	}
+
+	.service-detail .paragraph-city {
+		text-align: left;
+		margin: 5% 5% 5% 4%;
+	}
+
+	.service-detail .paragraph-1-city {
+		text-align: left;
+		margin: 10% 5% 10% 5%;
+	}
+	#left-paragraph-in-row .paragraph-1-city {
+		margin: 10% 5% 10% 10%;
+	}
+	.service-detail .list-1-city {
+		text-align: left;
+		margin: 3% 5% 3% 15%;
+	}
+
+	.service-detail .list-1-city li {
+		display: list-item;
+		list-style-type: disc;
+	}
 }

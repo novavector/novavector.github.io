@@ -2988,3 +2988,40 @@ blockquote {
 	opacity: .7;
 }
 
+/* Smart City */
+.service-detail .title-city {
+	color: #363636;
+	font-weight: bold;
+}
+
+.service-detail .title-city::before {
+	content: "";
+	background: #ff5e14;
+}
+
+.service-detail .title-1-city {
+	color: #363636;
+	font-weight: bold;
+}
+
+.service-detail .title-1-city::before {
+	content: "";
+	background: #ff5e14;
+}
+
+.service-detail .paragraph-city {
+	color: #2e2e2e;
+}
+
+.service-detail .paragraph-1-city {
+	color: #2e2e2e;
+}
+
+.service-detail .list-1-city {
+	color: #2e2e2e;
+}
+
+.service-detail .list-1-city li {
+	display: list-item;
+	list-style-type: disc;
+}
