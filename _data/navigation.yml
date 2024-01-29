@@ -61,5 +61,7 @@
   #   url: /pages/contact
   # - text: 404
   #   url: /pages/404
+#- text: Tutorials
+#  url: /pages/tutoials
 - text: Contact
   url: /pages/contact
