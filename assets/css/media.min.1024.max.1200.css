@@ -37,7 +37,7 @@
 	}
 
 	ul {
-		font-size: 1rem !important;
+		font-size: 0.8rem !important;
 	}
 
 	.nav-tabs .nav-link {
@@ -866,7 +866,12 @@
 		text-align: left;
 		margin: 5% 5% auto 5%;
 	}
-
+	.img-production-lines-1 {
+		margin: 10% 0% 0% 0%;
+	}
+	.industry-list-section {
+		padding: 0% 0% 0% 4%;
+	}
 	.service-detail .title-industry::before {
 		position: absolute;
 		width: 100%;

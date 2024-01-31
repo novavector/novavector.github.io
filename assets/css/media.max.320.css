@@ -1159,4 +1159,14 @@
 		display: list-item;
 		list-style-type: disc;
 	}
+	.city-order div:nth-child(1) {
+		order: 2;
+	}
+
+	.city-order  div:nth-child(2) {
+		order: 1;
+	}
+	.city-img-1 {
+		margin: 0% 0% 5% 0%;
+	}
 }

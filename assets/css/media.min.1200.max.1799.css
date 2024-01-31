@@ -923,6 +923,9 @@
 	#smart-industry {
 		margin: 0% auto 0% auto;
 	}
+	.industry-list-section {
+		padding: 0% 0% 0% 4%;
+	}
 
 	#industry-row {
 		background-color: #fbfbfb;
@@ -932,6 +935,9 @@
 		position: relative;
 		text-align: left;
 		margin: 5% 5% auto 5%;
+	}
+		.img-production-lines-1 {
+		margin: 5% 0% 0% 0%;
 	}
 
 	.service-detail .title-industry::before {
@@ -1236,7 +1242,7 @@
 	}
 
 	.regular-city {
-		margin: auto auto 5% auto;
+		margin: auto auto 1% auto;
 	}
 
 	.service-detail .title-city {

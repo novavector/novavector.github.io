@@ -940,11 +940,19 @@
 	#industry-row {
 		background-color: #fbfbfb;
 	}
-
+	.img-production-lines-1 {
+		margin: 5% 0% 0% 0%;
+	}
 	.service-detail .title-industry {
 		position: relative;
 		text-align: left;
-		margin: 5% 5% auto 5%;
+		margin: 3% 5% auto 5%;
+	}
+	.img-industry-planning{
+		margin: 0% 0% 5% 0%;
+	}
+	.industry-list-section {
+		padding: 0% 0% 0% 3%;
 	}
 
 	.service-detail .title-industry::before {
@@ -1249,7 +1257,7 @@
 	/* Smart City */
 
 	#smart-city {
-		margin: 0% auto 3% auto;
+		margin: 0% auto 0% auto;
 	}
 
 	#city-row {
@@ -1257,7 +1265,7 @@
 	}
 
 	.regular-city {
-		margin: auto auto 5% auto;
+		margin: auto auto 1% auto;
 	}
 
 	.service-detail .title-city {

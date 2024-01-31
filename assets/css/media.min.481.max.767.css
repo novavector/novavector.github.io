@@ -880,6 +880,14 @@
 		margin: 7% 5% auto 5%;
 	}
 
+	.industry-order div:nth-child(1) {
+		order: 2;
+	}
+
+	.industry-order  div:nth-child(2) {
+		order: 1;
+	}
+
 	.service-detail .title-industry::before {
 		position: absolute;
 		width: 100%;
@@ -900,6 +908,10 @@
 		height: 2px;
 		bottom: -15px;
 		margin: 0%;
+	}
+
+	.img-production-lines-1 {
+		margin: 5% 0% 5% 0%;
 	}
 
 	.service-detail .paragraph-1-industry {
@@ -1177,5 +1189,15 @@
 	.service-detail .list-1-city li {
 		display: list-item;
 		list-style-type: disc;
+	}
+	.city-order div:nth-child(1) {
+		order: 2;
+	}
+
+	.city-order  div:nth-child(2) {
+		order: 1;
+	}
+	.city-img-1 {
+		margin: 0% 0% 5% 0%;
 	}
 }
