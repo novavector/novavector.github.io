@@ -1088,7 +1088,7 @@
 	.service-detail .title-2 {
 		position: relative;
 		text-align: center;
-		margin: 5% 10%;
+		margin: 10% 10%;
 	}
 
 	.service-detail .title-2::before {
@@ -1105,7 +1105,7 @@
 	.service-detail .paragraph-2 {
 		opacity: 0.6;
 		text-align: center;
-		margin: 15% 10% 0% 10%;
+		margin: 10% 10% 10% 10%;
 	}
 
 	.details-text {

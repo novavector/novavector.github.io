@@ -579,9 +579,13 @@
 	}
 
 	/* Products, services, solutions */
-	.solutions-area p, .products-area p, .services-entity-area p {
+	.solutions-area p, .services-entity-area p {
 		text-align: left;
 		margin: -5% 5% 10% 3%;
+	}
+	.products-area p {
+		text-align: left;
+		margin: -5% 5% 8% 0%;
 	}
 	.services-entity-area .img-fluid {
 		width: 100%;
@@ -591,13 +595,21 @@
 		margin: 10% auto 5% auto;
 	}
 
-	.products-content a.btn, .services-entity-content a.btn, .solutions-content a.btn {
+	.solutions-content a.btn, .services-entity-content a.btn {
 		margin: auto auto auto 3%;
 	}
 
-	.solutions-area h3, .products-area h3, .services-entity-area h3 {
+	.products-content a.btn {
+		margin: auto auto auto 0%;
+	}
+
+	.solutions-area h3, .services-entity-area h3 {
 		text-align: left;
 		margin: 0% 5% 3% 3%;
+	}
+	.products-area h3 {
+		text-align: left;
+		margin: 0% 5% 3% 0%;
 	}
 
 	.solutions-area .solutions-box, .services-entity-area .services-entity-box {
@@ -684,7 +696,6 @@
 	.img-platform-2, .img-platform-3, .img-platform-4 {
 		width: 100%;
 		height: auto;
-		margin: 0% 5% 0% 5%;
 	}
 
 	.regular-platform {
@@ -1090,12 +1101,12 @@
 
 	.service-detail .paragraph-education {
 		text-align: left;
-		margin: 7% 5% 5% 5%;
+		margin: 7% 5% 3% 5%;
 	}
 
 	.service-detail .list-1-education {
 		text-align: left;
-		margin: 7% 5% 0% 15%;
+		margin: 0% 5% 3% 15%;
 	}
 
 	.service-detail .list-1-education li {
@@ -1107,7 +1118,7 @@
 	.service-detail .title-2 {
 		position: relative;
 		text-align: center;
-		margin: 5% 10%;
+		margin: 5% 5% 5% 5%;
 	}
 
 	.service-detail .title-2::before {
@@ -1124,7 +1135,7 @@
 	.service-detail .paragraph-2 {
 		opacity: 0.6;
 		text-align: center;
-		margin: 15% 10% 0% 10%;
+		margin: 6% 10% 10% 10%;
 	}
 
 	.details-text {
@@ -1137,7 +1148,7 @@
 	.img-platform-2, .img-platform-3, .img-platform-4 {
 		width: 307px;
 		height: auto;
-		margin: 0% 5% 0% 5%;
+		margin: 0% 5% 5% 5%;
 	}
 	.regular-platform {
 		display: none;
@@ -1172,6 +1183,9 @@
 		margin: 0%;
 	}
 
+	.img-city-1 {
+		margin: 5% 0% 0% 0%;
+	}
 	.service-detail .paragraph-city {
 		text-align: left;
 		margin: 7% 5% 5% 5%;

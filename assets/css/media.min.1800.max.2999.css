@@ -992,7 +992,7 @@
 
 	.service-detail .paragraph-industry {
 		text-align: left;
-		margin: 3% 5% 5% 5%;
+		margin: 3% 5% 4% 5%;
 	}
 
 	.img-industry-1, .img-industry-2 {
@@ -1238,7 +1238,7 @@
 	.service-detail .paragraph-2 {
 		opacity: 0.6;
 		text-align: center;
-		margin: 5% 10% 0% 10%;
+		margin: 10% 10% 10% 10%;
 	}
 
 	.details-text {
@@ -1281,6 +1281,9 @@
 		bottom: -15px;
 		margin: 0%;
 	}
+	.img-city-1 {
+		margin: 5% 0% 5% 0%;
+	}
 
 	.service-detail .title-1-city {
 		position: relative;
@@ -1301,7 +1304,7 @@
 
 	.service-detail .paragraph-city {
 		text-align: left;
-		margin: 3% 5% 5% 5%;
+		margin: 3% 5% 2% 5%;
 	}
 
 	.service-detail .paragraph-1-city {
@@ -1313,7 +1316,7 @@
 	}
 	.service-detail .list-1-city {
 		text-align: left;
-		margin: 0% 5% 5% 15%;
+		margin: 5% 5% 5% 15%;
 	}
 
 	.service-detail .list-1-city li {

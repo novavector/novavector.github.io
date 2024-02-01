@@ -704,7 +704,7 @@
 	.img-platform-2, .img-platform-3, .img-platform-4 {
 		width: 100%;
 		height: auto;
-		margin: 0% 5% 0% 5%;
+		margin: 0% 5% 5% 5%;
 	}
 
 	.regular-platform {
@@ -1102,7 +1102,7 @@
 
 	.service-detail .list-1-education {
 		text-align: left;
-		margin: 10% 5% 0% 15%;
+		margin: 5% 5% 3% 15%;
 	}
 
 	.service-detail .list-1-education li {
@@ -1114,7 +1114,7 @@
 	.service-detail .title-2 {
 		position: relative;
 		text-align: center;
-		margin: 5% 10%;
+		margin: 2% 10% 9% 10%;
 	}
 
 	.service-detail .title-2::before {
@@ -1131,8 +1131,9 @@
 	.service-detail .paragraph-2 {
 		opacity: 0.6;
 		text-align: center;
-		margin: 15% 10% 0% 10%;
+		margin: 10% 10% 10% 10%;
 	}
+
 
 	.details-text {
 		margin: 10% 5%;
@@ -1144,7 +1145,6 @@
 	.img-platform-2, .img-platform-3, .img-platform-4 {
 		width: 307px;
 		height: auto;
-		margin: 0% 5% 0% 5%;
 	}
 	.regular-platform {
 		display: none;
@@ -1154,7 +1154,10 @@
 	.service-detail .title-city {
 		position: relative;
 		text-align: left;
-		margin: 5% 5% auto 5%;
+		margin: 10% 5% auto 5%;
+	}
+	.img-city-1 {
+		margin: 5% 0% 0% 0%;
 	}
 
 	.service-detail .title-city::before {

@@ -882,7 +882,7 @@
 
 	.service-detail .title-agriculture::before {
 		position: absolute;
-		width: 100%;
+		width: 50%;
 		height: 2px;
 		bottom: -15px;
 		margin: 0%;
@@ -1067,19 +1067,30 @@
 	#building-row {
 		background-color: #fbfbfb;
 	}
+	.img-building-1 {
+		margin: 5% 0% 5% 0%;
+	}
+
+	.img-building-2 {
+		margin: 5% 0% 5% 0%;
+	}
+
+	.img-building-3 {
+		margin: 10% 0% 5% 0%;
+	}
 
 	.service-detail .title-building {
 		position: relative;
 		text-align: left;
-		margin: 5% 5% auto 5%;
+		margin: 10% 5% auto 5%;
 	}
 	#left-paragraph-in-row .title-building {
-		margin: 5% 5% auto 10%;
+		margin: 10% 5% auto 10%;
 	}
 
 	.service-detail .title-building::before {
 		position: absolute;
-		width: 100%;
+		width: 50%;
 		height: 2px;
 		bottom: -15px;
 		margin: 0%;
@@ -1088,10 +1099,10 @@
 	.service-detail .title-1-building {
 		position: relative;
 		text-align: left;
-		margin: 5% 5% auto 5%;
+		margin: 10% 5% auto 5%;
 	}
 	#left-paragraph-in-row .title-1-building {
-		margin: 5% 5% auto 10%;
+		margin: 10% 5% auto 10%;
 	}
 
 	.service-detail .title-1-building::before {
@@ -1104,23 +1115,20 @@
 
 	.service-detail .paragraph-building {
 		text-align: left;
-		margin: 5% 5% 5% 5%;
+		margin: 5% 5% 10% 5%;
 	}
 	#left-paragraph-in-row .paragraph-building {
-		margin: 5% 5% 5% 10%;
+		margin: 5% 5% 10% 10%;
 	}
 
 	.service-detail .paragraph-1-building {
 		text-align: left;
-		margin: 5% 5% 5% 5%;
+		margin: 5% 5% 10% 5%;
 	}
 	#left-paragraph-in-row .paragraph-1-building {
-		margin: 5% 5% 5% 10%;
+		margin: 5% 5% 10% 10%;
 	}
 
-	.img-building-1, .img-building-2, .img-building-3 {
-		margin: 5% auto 5% auto;
-	}
 
 	/* Education */
 
@@ -1215,7 +1223,7 @@
 	.service-detail .paragraph-2 {
 		opacity: 0.6;
 		text-align: center;
-		margin: 5% 10% 0% 10%;
+		margin: 10% 10% 10% 10%;
 	}
 
 	.details-text {
@@ -1253,7 +1261,7 @@
 
 	.service-detail .title-city::before {
 		position: absolute;
-		width: 100%;
+		width: 50%;
 		height: 2px;
 		bottom: -15px;
 		margin: 0%;

@@ -2526,7 +2526,6 @@ blockquote {
 	position: relative;
 	font-family: 'Lato', sans-serif;
 	text-align: center;
-	margin: 5% 10%;
 }
 
 .service-detail .title-2::before {
@@ -2549,7 +2548,6 @@ blockquote {
 	color: #2e2e2e;
 	opacity: 0.6;
 	text-align: left;
-	margin: 10% 10%;
 }
 
 .details-bg {
