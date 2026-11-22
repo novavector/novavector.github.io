@@ -1,11 +1,24 @@
 (function($) {
   "use strict";
 
-  // mobile menu
-  $("#mobile-menu").meanmenu({
-    meanMenuContainer: ".mobile-menu",
-    meanScreenWidth: "991"
+  // Pages on the new design load only the plugins they use; the legacy calls below then do nothing.
+  ["slick", "imagesLoaded", "isotope", "counterUp", "owlCarousel", "magnificPopup"].forEach(function(name) {
+    if (!$.fn[name]) {
+      $.fn[name] = function() { return this; };
+    }
   });
+
+  // Keep an optional mobile-menu failure from blocking the homepage carousel.
+  if ($.fn.meanmenu) {
+    try {
+      $("#mobile-menu").meanmenu({
+        meanMenuContainer: ".mobile-menu",
+        meanScreenWidth: "991"
+      });
+    } catch (error) {
+      // The desktop navigation remains available as a fallback.
+    }
+  }
 
 
   // sticky
@@ -33,6 +46,9 @@
 
   function mainSlider() {
     var BasicSlider = $(".slider-active");
+    if (!BasicSlider.length || BasicSlider.hasClass("slick-initialized") || !$.fn.slick) {
+      return;
+    }
     BasicSlider.on("init", function(e, slick) {
       var $firstAnimatingElements = $(".single-slider:first-child").find(
         "[data-animation]"
@@ -40,6 +56,13 @@
       doAnimations($firstAnimatingElements);
     });
     BasicSlider.on("beforeChange", function(e, slick, currentSlide, nextSlide) {
+      // Rotate right to left: the current text leaves to the left while the next one enters from the right.
+      var $leaving = $('.single-slider[data-slick-index="' + currentSlide + '"]').find("[data-animation]");
+      $leaving.each(function() {
+        var $el = $(this);
+        $el.removeClass("animated " + $el.data("animation")).css({ "animation-delay": "0s", "-webkit-animation-delay": "0s" });
+        $el.addClass("animated slideOutLeft").one("animationend webkitAnimationEnd", function() { $el.removeClass("animated slideOutLeft"); });
+      });
       var $animatingElements = $(
         '.single-slider[data-slick-index="' + nextSlide + '"]'
       ).find("[data-animation]");
@@ -47,8 +70,9 @@
     });
     BasicSlider.slick({
       autoplay: true,
-      autoplaySpeed: 10000,
+      autoplaySpeed: 7000,
       fade: true,
+      speed: 900,
       prevArrow:
         '<button type="button" class="slick-prev"><i class="icofont-long-arrow-left"></i>Prev</button>',
       nextArrow:
@@ -237,7 +261,7 @@
     animation: "fade", // Fade, slide, none
     animationInSpeed: 1000, // Animation in speed (ms)
     animationOutSpeed: 1000, // Animation out speed (ms)
-    scrollText: '<span class="lnr lnr-chevron-up"></span>' // Text for element
+    scrollText: '<svg class="nv-scrollup-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 10.5l5-5 5 5"/></svg><span class="sr-only">Back to top</span>' // Text for element
   });
 
   if($("#search-input").length >0){

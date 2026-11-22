@@ -39,7 +39,6 @@ New CSS Index
 @import url('media.min.321.max.480.css');
 @import url('media.min.481.max.767.css');
 @import url('media.min.768.max.991.css');
-@import url('media.min.992.max.1023.css');
 @import url('media.min.1024.max.1200.css');
 @import url('media.min.1200.max.1799.css');
 @import url('media.min.1800.max.2999.css');
@@ -102,7 +101,7 @@ button {
 	color: #1696e7;
 	outline: medium none;
 }
-button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+button:focus, input:focus, textarea, textarea:focus{outline: 0}
 .uppercase {
 	text-transform: uppercase;
 }
@@ -130,17 +129,17 @@ h5 a,
 h6 a {
 	color: inherit;
 }
-h1 {
+h1, .slider-content .nv-slide-title {
 	font-size: 32px;
 	font-weight: bold;
 }
-h2 {
+h2, .nv-home-label {
 	font-size: 28px;
 }
-h3 {
+h3, .nv-home-architecture__copy > h2, .service-area .service-title h2 {
 	font-size: 24px;
 }
-h4 {
+h4, .tab-pane h3, .card-title-new h3, .nv-architecture-points h3, .features-wrap .section-title h3, h2.meeting-text-p {
 	font-size: 20px;
 }
 h5 {
@@ -314,6 +313,7 @@ label {
 .main-menu ul li {
 	display: inline-block;
 	position: relative;
+	margin-left: 24px;
 }
 .main-menu ul li a {
 	color: #020d26;
@@ -321,6 +321,7 @@ label {
 	display: block;
 	font-weight: 600;
 	position: relative;
+	padding: 30px 0;
 }
 .main-menu.second-menu ul li a {
 	color: #ffffff;
@@ -344,11 +345,13 @@ label {
 	visibility: hidden;
 	transition: .3s;
 	border-top: 3px solid #ff5e14;
+	min-width: 250px;
 }
 .main-menu.second-menu ul li .sub-menu {
 	border-top: 3px solid #020d26;
 }
-.main-menu ul li:hover .sub-menu{
+.main-menu ul li:hover .sub-menu,
+.main-menu ul li:focus-within .sub-menu{
 	opacity: 1;
 	visibility: visible;
 	top: 100%;
@@ -366,6 +369,7 @@ label {
 	font-weight: 600;
 	position: relative;
 	font-size: 13px;
+	padding: 12px 16px;
 }
 .main-menu.second-menu ul li .sub-menu li a {
 	color: #020d26;
@@ -392,11 +396,49 @@ label {
 .main-menu ul li:hover> a{
 	color: #ff5e14
 }
+.main-menu a:focus-visible {
+	outline: 3px solid #ff5e14;
+	outline-offset: 3px;
+}
+.main-menu ul li.navigation-cta > a {
+	background: #ff5e14;
+	color: #fff;
+	padding: 11px 16px;
+	margin: 19px 0;
+	border-radius: 3px;
+}
+.main-menu ul li.navigation-cta > a:hover,
+.main-menu ul li.navigation-cta > a:focus {
+	background: #e64f08;
+	color: #fff;
+}
+.mean-container .mean-nav ul li.navigation-cta > a {
+	background: #ff5e14;
+	color: #fff;
+	font-weight: 700;
+}
+.mean-container .mean-nav ul li.navigation-cta > a:hover,
+.mean-container .mean-nav ul li.navigation-cta > a:focus {
+	background: #e64f08;
+	color: #fff;
+}
+.anchor-target,
+[id="open-architecture"],
+[id="edgex-foundry"],
+[id="edge-operations"],
+[id="request-demo"] {
+	scroll-margin-top: 90px;
+}
 .main-menu ul li:hover a::before,.main-menu ul li:hover a::after{
 	opacity: 1;
 }
 .menu-active {
 	color: #ff5e14 !important;
+}
+/* The Request a Demo button keeps white text when it is the active page (Contact). */
+.main-menu ul li.navigation-cta > a.menu-active,
+.mean-container .mean-nav ul li.navigation-cta > a.menu-active {
+	color: #fff !important;
 }
 .second-menu-active {
 	color: #fff !important;
@@ -649,7 +691,7 @@ label {
 	background: #ff5e14;
 	bottom: -25px;
 }
-.section-title h4 {
+.section-title h4, :where(.features-wrap) .section-title h3 {
 	position: relative;
 	margin-bottom: 35px;
 	display: inline-block;
@@ -659,7 +701,7 @@ label {
 	font-weight: 600;
 	line-height: 1;
 }
-.section-title h4::before {
+.section-title h4::before, :where(.features-wrap) .section-title h3::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -1672,7 +1714,7 @@ blockquote {
 	font-family: 'Lato', sans-serif;
   }
 
-  .container h3{
+  .container h3:not(:where(.card-title-new h3, .nv-architecture-points h3, .tab-pane h3, .features-wrap h3)), .service-area .service-title h2, .nv-home-architecture__copy > h2 {
 	position: relative;
 	margin-bottom: 45px;
 	display: inline-block;
@@ -1682,7 +1724,7 @@ blockquote {
 	font-family: 'Lato', sans-serif;
 }
 
-.container h3::before {
+.container h3:not(:where(.card-title-new h3, .nv-architecture-points h3, .tab-pane h3, .features-wrap h3))::before, .service-area .service-title h2::before, .nv-home-architecture__copy > h2::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -1805,14 +1847,14 @@ blockquote {
 	background: #000;
 	opacity: .4;
 }
-.slider-content h1 {
+.slider-content h1, .slider-content .nv-slide-title {
 	font-size: 72px;
 	font-weight: 800;
 	color: #fff;
 	line-height: 1;
 	margin-bottom: 20px;
 }
-.slider-content h1 span {
+.slider-content h1 span, .slider-content .nv-slide-title span {
 	color: #ff5e14;
 }
 .slider-content a.btn {
@@ -1897,7 +1939,7 @@ blockquote {
 	background: #FFFFFF;
 }
 
-.user-story h3 {
+.user-story h3:not(:where(.tab-pane h3)) {
 	text-transform: capitalize;
 	color: #363636;
 }
@@ -1947,12 +1989,12 @@ blockquote {
 	border-bottom: 2px solid #ff5a14 !important;
 }
 
-.tab-content .tab-pane h4 {
+.tab-content .tab-pane h4, .tab-content .tab-pane h3 {
 	color: #ffffff;
 	font-weight: bold;
 }
 
-.tab-content .tab-pane h4::before {
+.tab-content .tab-pane h4::before, .tab-content .tab-pane h3::before {
 	color: transparent;
 }
 
@@ -2069,12 +2111,12 @@ blockquote {
 	color: #D8D8D8;
 }
 
-.card-title-new h4 {
+.card-title-new h4, .card-title-new h3 {
 	background-color: #363636;
 	color: #D8D8D8;
 }
 
-.service-title h3::before {
+.service-title h3:not(:where(.features-wrap h3))::before, .service-area .service-title h2::before {
 	content: "";
 	background: transparent;
 }
@@ -2092,7 +2134,7 @@ blockquote {
 	color: #363636;
 }
 
-.features-wrap h4 {
+.features-wrap h4, .features-wrap h3 {
 	font-weight: bold;
 	color: #000000;
 }
@@ -2324,15 +2366,15 @@ blockquote {
 }
 
 .features-wrap:hover #support-icon {
-	content: url(../img/icons/support-white.png);
+	content: url(../img/icons/nv-support-white.svg);
 }
 
 .features-wrap:hover #services-icon {
-	content: url(../img/icons/services-white.png);
+	content: url(../img/icons/nv-integration-white.svg);
 }
 
 .features-wrap:hover #training-icon {
-	content: url(../img/icons/training-white.png);
+	content: url(../img/icons/nv-training-white.svg);
 }
 
 .features-wrap:hover h4,.features-wrap:hover p{
@@ -2350,6 +2392,7 @@ blockquote {
 .features-icon img {
 	max-width: 100%;
 	height: auto;
+	width: 150px;
 }
 
 .section-partners h3 {
@@ -3022,4 +3065,60 @@ blockquote {
 .service-detail .list-1-city li {
 	display: list-item;
 	list-style-type: disc;
+}
+
+/* Digitalization Journey steps */
+.nv-home-journey {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  transform: translateX(8%);
+}
+.nv-home-journey article,
+.nv-home-journey article span,
+.nv-home-journey article h3,
+.nv-home-journey article p {
+  text-align: center;
+}
+
+
+/* Industrial use case paragraphs */
+.card-text-paragraph p span {
+  display: block;
+}
+
+
+/* Industrial use case tab paragraphs */
+.tab-content .tab-pane p span {
+  display: block;
+}
+
+/* Homepage orange section headings */
+.orange-text {
+  color: #FF5A14 !important;
+}
+
+/* Digitalization Journey subheading */
+.intro h3 {
+  font-size: 20px;
+}
+
+/* Customer Outcomes subheading */
+.nv-home-results__heading > h2#customer-results-title {
+  font-size: 20px;
+}
+
+/* Core Operational Capabilities subheading */
+.nv-capabilities-heading > .container > h2:not(.orange-text) {
+  font-size: 20px;
+}
+
+/* Platform Architecture subheading */
+.nv-home-architecture__copy > h3, .nv-home-architecture__copy > h2 {
+  font-size: 20px;
 }

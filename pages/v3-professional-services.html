@@ -1,0 +1,81 @@
+---
+redirect_from:
+  - /pages/services.html
+  - /pages/professional-services.html
+  - /pages/services-details.html
+layout: v3
+permalink: /professional-services/
+title: Implementation and Integration
+title_accent: Integration
+description: Nova Vector implementation and integration services, on premises, in the cloud, or hybrid, with ERP and MES links built for your data model, delivered by the team that develops the platform.
+summary: Plan, deploy, configure, and integrate Nova Vector around your equipment, systems, and teams, with the engineers who build the platform.
+eyebrow: Services
+theme: platform
+hero_image: /assets/img/v3/hero/professional-services.jpg
+show_capability_cards: true
+primary_label: Discuss your project
+primary_url: /contact/
+capability_eyebrow: Services
+capability_heading: From the first line to every site
+capabilities:
+  - title: Architecture and discovery
+    text: Define operational goals, connected equipment and systems, data flows, constraints, responsibilities, and implementation phases.
+  - title: Platform implementation
+    text: Install on premises, in the cloud, or hybrid, and configure devices, edge nodes, reports, alerts, tasks, and process rules for your plant.
+  - title: Integration and enablement
+    text: Connect ERP, MES, SCADA, and existing tools through open APIs and low-code flows, document the solution, and train the teams that run it.
+content_sections:
+  - eyebrow: Delivery method
+    heading: Start with the operational workflow, not the dashboard
+    paragraphs:
+      - Every project begins by identifying the equipment, systems, users, decisions, and failure conditions involved in the target operation.
+      - The resulting design defines the asset model, data flows, process state, edge responsibilities, integrations, security boundaries, and measurable acceptance criteria.
+  - eyebrow: Connect what you have
+    heading: Modern controllers directly, older machines with retrofit sensors
+    paragraphs:
+      - Controllers and building systems connect over OPC UA, Modbus TCP, BACnet/IP, SNMP, MQTT, or LoRaWAN. Older machines without a readable controller are retrofitted with sensors that deliver the same data set as modern equipment, without major investment or production downtime.
+      - Edge nodes at the line collect the data, keep local logic running, and are managed as one fleet from the platform.
+    image: /assets/img/v3/screens/resources/machine-live-data.png
+    image_alt: Nova Vector machine page with a live chart of the machine's values and its readings as they arrive
+    caption: One page per machine, with every value it sends charted live. Screenshot from a demo installation.
+  - eyebrow: Where it runs
+    heading: On premises, in the cloud, or hybrid
+    paragraphs:
+      - The standard installation is Docker Compose on one Linux server. Customers that run Kubernetes, for example with Rancher, get a Kubernetes deployment as a project service, and isolated or air-gapped networks are prepared per installation.
+      - High availability, backups, retention, and update windows are designed with the customer's IT for each project rather than assumed.
+  - eyebrow: Enterprise systems
+    heading: Built for your data model, not a generic connector
+    paragraphs:
+      - There are no one-size-fits-all ERP or MES connectors. Each integration is designed for the customer's data model, authentication, and direction of data flow, typically work orders and products in, and produced, scrapped, and consumed quantities, stoppages, and maintenance records out.
+      - Integrations are built on the REST APIs, Node-RED flows, or custom functions, and external systems authenticate with their own service accounts and see only the records of their groups.
+    image: /assets/img/v3/features/11-automation-and-integration/open-api.png
+    image_alt: Nova Vector OpenAPI documentation
+    caption: Integrations use the same documented APIs as the Nova Vector console.
+  - eyebrow: Customize
+    heading: Reports, processes, and workflows shaped to your plant
+    paragraphs:
+      - Ready-made OEE, stoppage, reliability, and team reports are adapted to your lines, shifts, and products. Process rules model how your machines depend on each other, and task workflows follow your maintenance and quality procedures, including RFID badge scans at the machine, customized to match your maintenance process flow.
+    image: /assets/img/v3/screens/resources/maintenance-work-board.png
+    image_alt: Nova Vector maintenance work board with each technician's open work, load, and capacity
+    caption: A maintenance work board configured around the team and its capacity. Screenshot from a demo installation.
+  - eyebrow: Test before go-live
+    heading: Prove integrations against a simulated line
+    paragraphs:
+      - MES and ERP links are usually tested late, on the real line, and nobody can order a bad lot or a breakdown on demand. Nova Vector Simulators replace that guesswork with a simulated assembly or production line that speaks the same protocols as the real equipment.
+      - The simulated line has a known ground truth. Scripted scenarios, such as a bad parts lot that sends servers to rework or a serial used twice, check every step with expected results, so the records your MES and ERP integrations depend on are verified before production depends on them.
+    image: /assets/img/v3/features/10-simulators/assembly-line.png
+    image_alt: Nova Vector Simulators assembly line with stations, badge readers, and test results
+    caption: A simulated assembly line used to test integrations before go-live.
+  - eyebrow: Handover and support
+    heading: Deliver a system the responsible team can operate
+    paragraphs:
+      - Implementation includes configuration, integration, testing, documentation, role-based training, and an agreed support path. Ownership is explicit across Nova Vector, customer infrastructure, equipment, and third-party systems.
+      - After go-live, the same team supports the platform, plans upgrades, and extends it to more lines, sites, and use cases.
+related:
+  - label: Training
+    url: /training/
+  - label: Support
+    url: /support/
+  - label: Platform Overview
+    url: /industrial-iot-platform/
+---

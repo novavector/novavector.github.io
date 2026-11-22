@@ -1,10 +1,43 @@
-- text: Home
-  url: /
-#- text: Terms
-#  url: /
-#- text: Privacy
-#  url: /
-#- text: Policy
-#  url: /
-- text: Contact
-  url: /pages/contact
+- title: Platform
+  links:
+  - text: Overview
+    url: /industrial-iot-platform/
+  - text: Devices & Connectivity
+    url: /iot-device-management/
+  - text: Reports & Analytics
+    url: /iot-timeseries-analytics/
+  - text: Alerts & Tasks
+    url: /industrial-state-machine/
+  - text: Edge Computing
+    url: /edge-computing-platform/
+  - text: Platform & Edge AI
+    url: /edge-ai-industrial-iot/
+  - text: Equipment Simulators
+    url: /industrial-equipment-simulators/
+
+- title: Solutions
+  links:
+  - text: Manufacturing & OEE
+    url: /manufacturing/
+  - text: Energy
+    url: /energy/
+  - text: Agriculture
+    url: /smart-agriculture/
+  - text: Buildings & Infrastructure
+    url: /industrial-infrastructure/
+
+- title: Services
+  links:
+  - text: Implementation & Integration
+    url: /professional-services/
+  - text: Support
+    url: /support/
+  - text: Training
+    url: /training/
+
+- title: Company
+  links:
+  - text: About
+    url: /about/
+  - text: Contact
+    url: /contact/

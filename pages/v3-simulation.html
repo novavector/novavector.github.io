@@ -1,0 +1,65 @@
+---
+layout: v3
+permalink: /industrial-simulation/
+title: Process Replay & Industrial Simulators
+description: Replay recorded production through versioned process models, and test integrations, alarms, dashboards, and reports against protocol-level equipment simulators before go-live.
+summary: Test the improvement before you change the line, and prove the integration before the hardware arrives.
+eyebrow: Digital twin and testing
+theme: platform
+hero_image: /assets/img/v3/hero/industrial-simulation.jpg
+video:
+  src: /assets/video/production-line.mp4
+  poster: /assets/video/production-line.jpg
+  title: Prove OEE before go-live
+  summary: Nova Vector Simulators run a production line that behaves like the real one, down to the protocol. Adapters, alarms, OEE reports, and maintenance workflows are set up and checked against it before the line goes live, including breakdowns you cannot order on demand.
+  duration: "4:14"
+content_sections:
+  - eyebrow: Process replay
+    heading: Test the improvement before you change the line
+    paragraphs:
+      - The process model is a live digital twin of your line, with every machine, its state, and the rules that link them. A replay runs recorded production through a copy of that model, faster than real time, so teams can investigate an incident or see how changed rules would have treated the same hour, day, or week.
+      - A replay can run against the current version, an older one, or a draft, over a window of up to 90 days. Replayed data is stored separately and labeled with its simulation, so live records are never mixed with test results.
+    image: /assets/img/v3/screens/process-replay-timeline.png
+    image_alt: A replay in Nova Vector with the recorded timeline on top and the replayed timeline filling in below
+    caption: An hour of recorded production replayed at sixty times real time, the recorded timeline on top and the replayed one below.
+  - eyebrow: Preflight
+    heading: Check the inputs before the run starts
+    paragraphs:
+      - Before a replay starts, a preflight check confirms that every data source in the model has recorded data for the chosen window, with the number of records and the time range per device.
+      - During the run, the simulator records each state change and the values that caused it, so the result can be explained rather than only observed.
+    image: /assets/img/v3/features/05-process-simulator/simulation-preflight.png
+    image_alt: Nova Vector preflight check before a replay, with all checks passed and the record count and time range for each device
+    caption: The preflight check lists the records and time range for each device before a replay runs.
+  - eyebrow: Compare
+    heading: Put runs and versions side by side
+    paragraphs:
+      - Two or more replays of a process can be compared, and two published versions of a process can be compared side by side. Teams see which version keeps the line running longer before anyone touches the live configuration.
+      - The model links machines by state rules. Buffer levels, cycle times, and throughput are not modeled, and OEE is reported by the reports module from the same machine data rather than by the replay itself.
+    image: /assets/img/v3/features/05-process-simulator/compare-runs.png
+    image_alt: Nova Vector comparison of two replays of the same process
+    caption: Run comparison shows how replays behave against comparable inputs.
+  - eyebrow: Nova Vector Simulators
+    heading: Prove the integration before the hardware arrives
+    paragraphs:
+      - Nova Vector Simulators put whole systems on the network as real equipment would, such as a production line with PLCs, conveyors, an energy meter, and an andon board. They speak Modbus TCP, BACnet/IP, SNMP, and MQTT, so the platform reads them exactly as it reads real devices, and adapters, alarms, dashboards, and OEE reports can be set up and checked before go-live.
+      - Scenarios run production around the clock, inject breakdowns and faults that are hard to create on real equipment, and check the expected outcome. The simulators also work with any other SCADA, BMS, or IoT platform.
+    points:
+      - Demonstrations with realistic data, alarms, and production figures
+      - Pilots in which adapters, alarms, dashboards, and reports are checked first
+      - Acceptance tests for faults that are hard to create on real equipment
+    image: /assets/img/v3/features/10-simulators/production-line.png
+    image_alt: Nova Vector Simulators console for a production line with four PLCs, three conveyors, an energy meter, a hall sensor, and an andon, with its scenarios
+    caption: The production-line simulator with its scenarios, from a single breakdown to a full shift.
+    link:
+      text: More about the simulators
+      url: /industrial-equipment-simulators/
+related:
+  - label: Alerts & Tasks
+    url: /industrial-state-machine/
+  - label: Implementation & Integration
+    url: /professional-services/
+  - label: Devices & Connectivity
+    url: /iot-device-management/
+  - label: Equipment Simulators
+    url: /industrial-equipment-simulators/
+---

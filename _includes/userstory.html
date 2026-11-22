@@ -1,16 +1,8 @@
-
 <!-- user-story -->
-<!--Bootstrap CSS-->
-
-<!--Fontawesome-->
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
 <section class="user-story">
     <script>
         function setNavLinksHeight() {
-          const navLinks = document.querySelectorAll('.nav-link');
+          const navLinks = document.querySelectorAll('.user-story .nav-tabs .nav-link');
           let maxHeight = 0;
 
           navLinks.forEach(link => {
@@ -30,12 +22,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h3>User Story</h3>
+                <h2 class="orange-text">Industries we serve</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-12 text-center">
-            <p class="black-text">Here are some of the user stories of the Nova Vector Industry 4.0 Platform.</p>
+            <p class="black-text">The Nova Vector IoT &amp; Edge Computing platform serves organizations that want to digitize their data and digitalize their physical operations, helping them work smarter rather than harder.</p>
             </div>
         </div>
     </div>
@@ -46,54 +38,55 @@
             <!-- Tabs navs -->
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-industry-tab" data-bs-toggle="tab" data-bs-target="#nav-industry" type="button" role="tab" aria-controls="nav-industry" aria-selected="true">
-                                                Smart <br>Industry
-                                            </button>
-                    <button class="nav-link" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">
-                                                Education
-                                            </button>
-                    <button class="nav-link" id="nav-building-tab" data-bs-toggle="tab" data-bs-target="#nav-building" type="button" role="tab" aria-controls="nav-building" aria-selected="false">
-                                                Smart <br>Building
-                                            </button>
-                    <button class="nav-link" id="nav-agriculture-tab" data-bs-toggle="tab" data-bs-target="#nav-agriculture" type="button" role="tab" aria-controls="nav-agriculture" aria-selected="false">
-                                                Smart <br>Agriculture
-                                            </button>
+                    <a class="nav-link active" id="nav-industry-tab" data-toggle="tab" href="#nav-industry" role="tab" aria-controls="nav-industry" aria-selected="true">
+                                                Manufacturing
+                                            </a>
+                    <a class="nav-link" id="nav-automation-tab" data-toggle="tab" href="#nav-automation" role="tab" aria-controls="nav-automation" aria-selected="false">
+                                                Process automation
+                                            </a>
+                    <a class="nav-link" id="nav-energy-tab" data-toggle="tab" href="#nav-energy" role="tab" aria-controls="nav-energy" aria-selected="false">
+                                                Energy &amp; remote sites
+                                            </a>
+                    <a class="nav-link" id="nav-agriculture-tab" data-toggle="tab" href="#nav-agriculture" role="tab" aria-controls="nav-agriculture" aria-selected="false">
+                                                Agriculture
+                                            </a>
+
                 </div>
               </nav>
               <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-agriculture" role="tabpanel" aria-labelledby="nav-agriculture-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/agriculture-resized.png)">
+                <div class="tab-pane fade" id="nav-agriculture" role="tabpanel" aria-labelledby="nav-agriculture-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/agriculture-resized.webp)">
                         <div class="row">
                             <div class="col-xl-12">
-                                    <h4>Smart <br> agriculture</h4>
-                                    <p>Nova Vector offers seamless integration of sensors, analytics, and automation for optimized agriculture operations. Our user-friendly solutions empower farming companies to achieve productivity and success.</p>
-                                    <a href="/pages/smart-agriculture.html" id="bigbtn" class="btn">More details</a>
-                            </div>
-                        </div>
-                </div>
-                <div class="tab-pane fade" id="nav-industry" role="tabpanel" aria-labelledby="nav-industry-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/industry-resized.png)">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                    <h4>Smart <br> industry</h4>
-                                    <p>In the Industry 4.0 era, Nova Vector serves as your valuable partner, connecting existing systems with advanced technologies. Real-time data insights and enhanced operational efficiency are enabled through our IoT solutions.</p>
-                                    <a href="/pages/smart-industry.html" id="bigbtn" class="btn">More details</a>
+                                    <h3>24/7 Remote monitoring of soil and air</h3>
+                                    <p>Off-the-shelf LoRaWAN weather stations and soil probes report air, rain, moisture, temperature, EC, pH, and NPK from every field, and pumps, irrigation, and storage equipment join through their controllers. Nova Vector learns what is normal for each reading, raises the anomalies, turns them into tasks with an owner, and shows how quickly the team responds.</p>
+                                    <a href="{{ '/smart-agriculture/' | relative_url }}" class="btn">More about smart agriculture</a>
                             </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-building" role="tabpanel" aria-labelledby="nav-building-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/building-resized.png)">
+                <div class="tab-pane fade show active" id="nav-industry" role="tabpanel" aria-labelledby="nav-industry-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/industry-resized.webp)">
                         <div class="row">
                             <div class="col-xl-12">
-                                    <h4>Smart <br> building</h4>
-                                    <p>Transforming buildings into intelligent spaces, Nova Vector integrates smart sensors and energy management systems. The result: enhanced comfort, reduced energy usage, and predictive maintenance for sustainable and cost-effective operations.</p>
-                                    <a href="/pages/smart-building.html" id="bigbtn" class="btn">More details</a>
+                                    <h3>All production in one view</h3>
+                                    <p>Bring all manufacturing operations under one roof and track production, quality, and asset consumption in real time. Monitor work orders, recipes, and standard vs. actual consumption across each production cycle. Track plan attainment, downtime, and equipment performance to identify losses and improve productivity. Use live operational data, reporting, and lightweight MES capabilities to coordinate production from planning through execution.</p>
+                                    <a href="{{ '/manufacturing/' | relative_url }}" class="btn">More about manufacturing</a>
                             </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab" style="background-image:url({{site.baseurl}}/assets/img/clients/education-resized.png)">
+                <div class="tab-pane fade" id="nav-energy" role="tabpanel" aria-labelledby="nav-energy-tab" style="background-image:url({{site.baseurl}}/assets/img/products/nova-edge-computing.webp)">
                         <div class="row">
                             <div class="col-xl-12">
-                                    <h4>Education</h4>
-                                    <p>Nova Vector empowers education through integrated IoT solutions that facilitate interactive learning experiences and seamless campus management. Data-driven insights contribute to personalized education and a brighter future.</p>
-                                    <a href="/pages/education.html" id="bigbtn" class="btn">More details</a>
+                                    <h3>See energy use across remote sites</h3>
+                                    <p>Make energy consumption and asset distribution visible across pumping and remote sites, substations, and battery storage facilities. Monitor distributed equipment remotely through connected sensors, controllers, and edge devices. Maintain operational visibility across unreliable connections or isolated sites with local edge processing and remote site management.</p>
+                                    <a href="{{ '/energy/' | relative_url }}" class="btn">More about energy</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-automation" role="tabpanel" aria-labelledby="nav-automation-tab" style="background-image:url({{site.baseurl}}/assets/img/service/novavector-environment-monitoring.webp)">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                    <h3>Automate processes and responses</h3>
+                                    <p>Connect modern and legacy industrial equipment using standards such as OPC UA, Modbus TCP, BACnet/IP, SNMP, and MQTT. Centralize operational data and automate workflows, alerts, and responses across connected systems. Model processes and equipment states to improve visibility, control, and day-to-day operational coordination. Use governed Edge AI and predictive analytics on local operational data for quality assurance and maintenance.</p>
+                                    <a href="{{ '/industrial-state-machine/' | relative_url }}" class="btn">More about process automation</a>
                             </div>
                     </div>
                 </div>
@@ -101,4 +94,5 @@
 
         </div>
     </div>
+
 </section>

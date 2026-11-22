@@ -1,13 +1,54 @@
 <section class="slider-area">
-    <div class="slider-active" style="background-image:url({{site.baseurl}}/assets/img/slider/first_frame.png)">
-        <div class="single-slider slider-bg d-flex align-items-center" style="background-image:url({{site.baseurl}}/assets/img/slider/nv-video-v01.gif)">
+    <video class="nv-banner-video" autoplay muted loop playsinline preload="none" poster="{{site.baseurl}}/assets/img/slider/nv-banner-platform-first.webp" data-src="{{site.baseurl}}/assets/img/slider/nv-banner-platform.mp4" aria-hidden="true"></video>
+    <script>
+    // Phones and reduced-motion visitors keep the poster; wider screens get the banner video.
+    (function () {
+      var video = document.querySelector('.nv-banner-video');
+      if (!video || !window.matchMedia('(min-width: 768px)').matches || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      video.preload = 'auto';
+      video.src = video.getAttribute('data-src');
+      var playing = video.play();
+      if (playing && playing.catch) playing.catch(function () {});
+    })();
+    </script>
+    <div class="slider-active" style="background-image:url({{site.baseurl}}/assets/img/slider/nv-banner-platform-first.webp)">
+        <div class="single-slider slider-bg d-flex align-items-center">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="slider-content">
-                            <h1 data-animation="fadeInDown" data-delay=".2s">Are you <br> prepared for <span>Industry 4.0?</span></h1>
-                            <p data-animation="fadeInLeft" data-delay=".4s">Nova Vector is a technology provider for business solutions that integrates advanced technologies with your existing systems to help you move your business forward. We are committed to offering reliable and innovative solutions that meet your needs and help you stay ahead of the competition.</p>
-                            <a href="/pages/solutions.html" class="btn" id="sliderbutton" data-animation="fadeInUp" data-delay=".6s">Get Started</a>
+                        <div class="slider-content" data-animation="slideInRight" data-delay="0s">
+                            <h1>One Industrial IoT Platform<br><span>for Connected Operations</span></h1>
+                            <p>Nova Vector is an industrial digitalization platform that connects your equipment, data, and teams in one place, ready for AI when you are.</p>
+                            <a href="{{ '/industrial-iot-platform/' | relative_url }}" class="btn" id="sliderbutton">Explore the Platform</a>
+                            <a href="{{ '/contact/#request-demo' | relative_url }}" class="btn nv-hero-secondary">Discuss Your Use Case</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slider slider-bg d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider-content" data-animation="slideInRight" data-delay="0s">
+                            <div class="nv-slide-title">Run AI<br><span>Where Your Data Lives</span></div>
+                            <p>The Nova Vector industrial IoT and edge computing platform prepares your business operations for an AI-ready future by digitalizing your operational data and running approved AI models on local devices, rather than on external cloud servers.</p>
+                            <a href="{{ '/edge-ai-industrial-iot/' | relative_url }}" class="btn">Explore Edge AI</a>
+                            <a href="{{ '/contact/#request-demo' | relative_url }}" class="btn nv-hero-secondary">Discuss Your Use Case</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slider slider-bg d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider-content" data-animation="slideInRight" data-delay="0s">
+                            <div class="nv-slide-title">Connect New and<br><span>Legacy Machines</span></div>
+                            <p>Digitalize Now. AI-Enable When Ready.<br><span>Connect controllers directly, retrofit older machines with sensors, and turn every event into data and tasks your team acts on, without major investment or production downtime.</span></p>
+                            <a href="{{ '/iot-device-management/' | relative_url }}" class="btn">Connect Your Equipment</a>
+                            <a href="{{ '/contact/#request-demo' | relative_url }}" class="btn nv-hero-secondary">Discuss Your Use Case</a>
                         </div>
                     </div>
                 </div>
