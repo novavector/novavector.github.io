@@ -12,7 +12,7 @@ mailchimp_input_name: ""
 # production repository when the release is approved for indexing.
 noindex: false
 # Add an approved GA4 measurement ID (G-XXXXXXXXXX) when available.
-google_analytics: ""
+google_analytics: "G-543RQBFBY7"
 
 permalink: "/:title"
 
